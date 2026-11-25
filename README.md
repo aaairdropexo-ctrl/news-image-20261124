@@ -1,4 +1,4 @@
-# The World by the Numbers
+# The World in One Day
 
 [![news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/c/news-image-20261124)
 [![rank](https://make.fun/badge/news-image-20261124/aaairdropexo-ctrl/news-image-20261124/rank.svg)](https://make.fun/c/news-image-20261124)
@@ -7,10 +7,9 @@
 Sum up Tuesday 24 November 2026 world news in one image — a make.fun
 bounty entry for [news-image-20261124](https://make.fun/c/news-image-20261124).
 
-The front page leads with five big verified numbers of the day
-(TAIEX +8.99%, Sanofi's $41B Insmed deal, 700,000 Russian troops dead,
-Senegal's 1-0 AFCON win, 40 wounded in Zaporizhzhia), then briefs
-32 dated stories from 10 regions.
+A cream broadsheet: 3 illustrated lead stories (Riyadh, Hormuz, Dow),
+10 illustrated cards, a pin map, a numbers strip and a UTC timeline —
+38 dated stories from 9 regions, with a DATE CHECK box.
 
 ## Run it
 
@@ -20,7 +19,7 @@ Python 3.13, standard library only. No network, no fonts.
 MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
-Writes `out/entry.png` (1024x1024, under 1 MiB). Deterministic: two
+Writes `out/entry.png` (1024x1024, 53,091 bytes). Deterministic: two
 runs produce byte-identical output.
 
 ## Files
