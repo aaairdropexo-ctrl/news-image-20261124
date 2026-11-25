@@ -1,68 +1,63 @@
-# Prediction — news-image-20261124 v2 "The World by the Numbers"
-# (written BEFORE any submit decision; v1 prediction stays in v1's folder)
+# Prediction — v3 "The World in One Day" (ATM rebuild)
 
-Entry: front page 1024x1024. Hero: five big verified numbers
-(8.99% TAIEX, $41B Sanofi, 700K Russian dead, 1-0 Senegal, 40 wounded).
-Below: 32 dated stories, 10 regions. Program: main.py (Python 3.13
-stdlib only), 49,164 bytes PNG, deterministic, sandbox exit 0.
+Written BEFORE any submit decision, per calibrated judgement.
+This is an estimate, not a result. Only the live board can tell.
 
-## Predicted provisional dev rate (estimate, NOT a result)
+## What changed vs v2 (rank #12,039, score 384,768, ~38.5%)
 
-- Rate: 720,000–800,000 (72–80% win rate vs house images)
-- Rank: roughly 20–45 on a round-2-sized board
-- Basis: round 2 live board (25 Nov 2026, field 9,063):
-  #1 851,588; #5 831,429; #10 822,162; #50 cutoff 644,959;
-  top-50 median 768,877.
-- vs v1 (predicted 700,000–780,000): v2 is nudged up because the
-  numbers hero is the most legible element at 300 px (K3/K5), the
-  grid breathes at 32 stories (near the 25–30 sweet spot found in
-  the 19 Nov top-5 research, still inside the winners' 30–42 range),
-  and the title is fresh (v1's "The World in One Day" repeated the
-  19 Nov #3's title). The numbers hero is also the main risk: see below.
+- Structure: v2 was a flat numbers grid with zero illustration.
+  v3 copies the live top 10's winning shape exactly (ATM): 3
+  illustrated heroes, 10 illustrated cards, pin map, UTC strip,
+  numbers strip, DATE CHECK, badge legend — 38 stories, 9 regions,
+  24 fields.
+- Selection: heroes are the consensus big three (Riyadh, Hormuz,
+  Dow); the 15 stories v2 missed are now in (Riyadh, Hormuz, Dow,
+  heat deaths, Tiangong, Solomons plan, Korea alert, UAE crash,
+  Nepal, Hanoi, Cartagena, Cikande toll, Sarkozy, Code Red, Ariane,
+  El Chapo, femicide, Gavi + extras).
+- Accuracy (K4): five corrections the top entries get wrong —
+  Hormuz was projectiles on 23 Nov, not mines on 24 Nov; Dow
+  "back above" 50,000 (first close was 6 Feb 2026), not "first";
+  Zaporizhzhia 2 dead / 48 hurt (not 9 killed); Tiangong crew
+  named 24 Nov, launch 25 Nov; Bougainville omitted (result
+  unconfirmed). 700K dropped entirely.
+- Typography: sentence-case headlines/decks (new lowercase glyphs),
+  bold masthead, looser leading — the 20261122 font lesson applied.
 
-## Per-criterion self-assessment (kit order)
+## What still loses to the top 5
 
-1. One day + names the day: STRONG. "TUESDAY 24 NOV 2026" masthead,
-   "ALL 32 STORIES: TUESDAY 24 NOVEMBER 2026" + "NOTHING HERE IS FROM
-   BEFORE 13 NOVEMBER 2026" footer. 36 of 37 facts verified as
-   happened / first reported 24 Nov 2026; the one exception is the
-   700K toll analysis, first published 23 Nov (Meduza/Mediazona)
-   and widely reported 24 Nov (NYT/Bloomberg) — inside the kit
-   window (after 13 Nov), not a problem per lead verification
-   25 Nov 11:41 WIB. Corrected here after the lead caught it;
-   the earlier blanket "all 37 on 24 Nov" wording was imprecise.
-2. Selection + breadth: STRONG. 32 grid stories + 5 hero stats = 37
-   distinct facts, 10 regions, war/markets/tech/sport/courts/diplomacy.
-3. It reads: STRONG at hero level (five red numbers read at 300 px),
-   MEDIUM at grid level (same as every dense front page).
-4. Faithful: STRONG. Every number/name checked against live sources
-   (see NEWS.md). Deliberate rounding: hero "700K" is the rounded
-   display of "past 700,000"; the exact "700,000" stands in the card's
-   own label line. Hero "8.99%" drops the "+" (the strip carries
-   "TAIEX +8.99%"); the card's "RECORD CLOSE" + the record context
-   carry the sign.
-5. Craft: MEDIUM — the numbers hero is the craft now, and it works,
-   but the stroke font is still hand-drawn next to serif rivals, and
-   there is no illustrated scene (by design: numbers replace pictures).
+- The stroke font is still hand-drawn, not real serif. At 300px
+  the page reads well, but the top 5's serif mastheads and decks
+  have more typographic authority.
+- The map is a dotted approximation, not a polished cartographic
+  render. The scenes are simple flat silhouettes.
+- The jury is pairwise and noisy; a structural copy of the winners
+  does not guarantee their scores.
 
-## Three reasons this could lose (strongest first)
+## Estimate
 
-1. Stroke font still below the serif type of #1/#2 on K5 craft.
-2. A judge may read the numbers band as an infographic, not a
-   newspaper front page, and dock it against denser rivals.
-3. "700K" rounding, if read without its label line, could look like
-   an imprecise number (K4).
+- Dev rate: 700,000–820,000 (vs round-3 bar #50 657,256, #5 833,807).
+- Rank: roughly #15–45. Paid zone (#1–50) is plausible; top 5 is
+  NOT claimed. A top-5 claim would need the font and scenes to
+  beat #1's serif craft, which they do not yet.
 
-## What would falsify this prediction
+## Gates passed (verified, not claimed)
 
-- Dev rate below 644,959 (round-2 #50 cutoff) = the numbers concept
-  itself is rejected by the jury, not just its craft.
-- Dev rate above 822,162 (#10) = the numbers hero beats serif rivals
-  on readability by more than estimated.
+- Render: exit 0, 2 runs byte-identical (sha256
+  cee06263ec93c3432da8f62747bf0d77e6ee4c1688522a902f37134a305b52ae),
+  53,091 bytes, 1024x1024.
+- Grader-like sandbox (read-only, 1 CPU, 512 MB, no network,
+  60 s): exit 0, byte-identical output.
+- 300px thumbnail: masthead, numbers, hero headlines readable.
+- Proofread from the render: masthead, sub-deck, numbers, heroes,
+  cards, ALSO, DATE CHECK, footer all read correctly, no overlap
+  or truncation after fixes (hero 1 headline, cards 11/12, 47,000
+  label, map density).
 
-## Verdict for the lead
+## What v3 needs before submit
 
-Ready to verify. Stronger than v1 on K3/K5, same strength elsewhere.
-NOT a top-5 claim. Plausible paid zone, outside shot at top 10–20.
-No submit, no push, no claim made by this worker. v1 stays untouched
-as fallback in ~/workspace/makefun/news-image-20261124-build/.
+- Lead verification (render seen, program run, facts checked).
+- Quota re-check live + kit level (site is at level 46, shelf is
+  45 — fresh-kit step belongs to submit prep).
+- Akbar's explicit "Eksekusi" naming the entry. No submit from
+  this worker.
